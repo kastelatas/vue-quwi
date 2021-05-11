@@ -1,7 +1,7 @@
 <template>
   <div class="single-project" >
     <div class="container">
-      <span class="errors" v-if="errors">{{errors.name}}</span>
+      <span class="errors mt-20" v-if="errors">{{errors.name}}</span>
       <form @submit.prevent="update" v-if="project">
         <div class="row ai-center">
           <p>Name</p>

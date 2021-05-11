@@ -2,9 +2,11 @@
   width: 100%
   form
     max-width: 600px
+    min-height: 100px
     width: 100%
     display: flex
     justify-content: flex-start
+    align-items: flex-start
     background: #fff
     border-radius: 5px
     border: 1px solid #e5e5e5
@@ -14,7 +16,7 @@
 
     p
       font-family: 'Arial', sans-serif
-      margin-right: 30px
+      margin-right: 50px
 
     .input
       margin: 0
@@ -22,3 +24,20 @@
     .btn
       margin-top: 0
       margin-left: 10px
+
+
+@media (max-width: 500px)
+  .single-project
+    form
+      justify-content: center
+      >div
+        flex-direction: column
+        align-items: center
+
+        p
+          margin-right: 0
+          margin-bottom: 10px
+
+        .btn
+          margin-left: 0
+          margin-top: 10px
