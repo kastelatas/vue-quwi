@@ -1,0 +1,53 @@
+.project-item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background: #fff
+  border: 1px solid #e5e5e5
+  margin-bottom: 10px
+  padding: 20px
+  border-radius: 5px
+  cursor: pointer
+
+  &:hover
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+    transition: all .2s
+
+  &__img
+    width: 100px
+    height: 100px
+    margin-right: 30px
+
+    img
+      width: 100%
+      object-fit: cover
+
+  &__name
+    font-family: 'Arial', sans-serif
+    font-size: 18px
+    font-weight: 700
+    max-width: 100px
+    width: 100px
+    word-break: break-word
+
+  &__active
+    font-family: 'Arial', sans-serif
+    font-size: 18px
+    font-weight: 700
+    color: #30972c
+
+  &__not-active
+    color: #ed1b24
+
+  &__times
+    max-width: 220px
+    width: 100%
+    font-family: 'Arial', sans-serif
+    font-size: 18px
+
+
+
+@media (max-width: 769px)
+  .project-item
+    flex-direction: column

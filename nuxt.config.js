@@ -1,5 +1,7 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global pages headers: https://go.nuxtjs.dev/config-head
+  ssr: true,
+  target: 'server',
   head: {
     title: 'vue-quwi',
     htmlAttrs: {
@@ -17,9 +19,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/sass/index.sass'
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins to run before rendering pages: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
 
@@ -28,10 +31,12 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'cookie-universal-nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

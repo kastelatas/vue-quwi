@@ -1,0 +1,80 @@
+html,
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.container
+  max-width: 991px
+  width: 100%
+  margin: 0 auto
+  padding: 0 10px
+
+.row
+  display: flex
+  flex-direction: row
+
+.jc-sb
+  display: flex
+  justify-content: space-between
+
+.ai-center
+  display: flex
+  align-items: center
+
+.btn
+  padding: 11px 20px
+  margin-top: 10px
+  font-family: 'Arial', sans-serif
+  font-size: 15px
+  text-transform: uppercase
+  background: #395378
+  color: #fff
+  border: none
+  border-radius: 5px
+  cursor: pointer
+
+  &-form
+    max-width: 100px
+
+  &-link
+    font-weight: 700
+    text-decoration: none
+    color: #000000
+    background: #cecece
+    border: 1px solid #c6c6c6
+
+.input
+  width: 100%
+  margin-bottom: 10px
+  outline: none
+
+.input-text
+  padding: 8px 9px
+  background: #fff
+  border: 2px solid #e6e6e6
+  color: #dcd5d1
+  font-size: 18px
+  &::placeholder
+    color: #dcd5d1
+
+.errors
+  display: flex
+  justify-content: center
+  margin-top: 20px
+
+
+@import layouts/main
+@import layouts/single-project
+
+@import components/navbar
+@import components/forms/login-form
+@import components/project-list
+@import components/project
+
+@import pages/auth-page
+@import pages/home-page
+@import pages/single-project-page
+

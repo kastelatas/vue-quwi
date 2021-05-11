@@ -1,12 +1,15 @@
 <template>
-  <div class="container">
-    <h1>Hi</h1>
+  <div class="auth-page">
+    <LoginForm/>
   </div>
 </template>
 
 <script>
-export default {
+import LoginForm from "~/components/Forms/LoginForm";
 
+export default {
+  layout: 'auth',
+  components: {LoginForm}
 }
 </script>
 
